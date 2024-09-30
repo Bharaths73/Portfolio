@@ -481,7 +481,7 @@ footer{
     display: flex;
     gap:1rem;
     padding: 1.2rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .footerfadedtext{
@@ -500,7 +500,6 @@ footer{
     transform: scale(1.2);
 }
 .iconwrapper{
-    width: 100%;
     display: flex;
     gap:50px;
     justify-content: center;
