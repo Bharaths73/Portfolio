@@ -29,7 +29,13 @@
     justify-content:space-between;
     align-items: center;
     padding-top:1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 80vw;
+    margin: auto;
+}
+.navbar-wrapper{
+    width: 100vw;
+    box-shadow: 0 4px 0 rgba(9, 9, 9, 0.2);
+    
 }
 .logo{
     width:3.5rem;
@@ -342,7 +348,6 @@ a{
 .skillcontainer{
     position:relative;
     display: flex;
-    /* padding: 5rem; */
     margin-top: 5rem;
     margin-bottom: 5rem;
     column-gap: 5rem;
@@ -438,6 +443,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.contact-container{
+    width: 80vw;
 }
 .form{
    display: flex;
@@ -641,6 +649,15 @@ footer{
     .container{
         width:100vw;
     }
+    .contact-container{
+        width: 80vw;
+    }
+    .skillcontainer{
+        width: 90vw;
+    }
+    /* .contactusformcontainer{
+        width:90vw;
+    } */
     /* .herosection{
         width: 95vw;
     } */
