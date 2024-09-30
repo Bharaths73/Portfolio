@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="port.css" type="text/css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "1l6H7J49qqEqNoIiN",
+    });
+    })();
+    </script>
+    <script>
+
+        window.onload = function() {
+            document.getElementById('contactus').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_b4t5fcr', 'template_pylbcts', this)
+                    .then(() => {
+                        alert("Mail sent successfully")
+                    }, (error) => {
+                        alert("Failed to send email")
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+       <div class="container">
+        <div class="navbar">
+            <div class="logocontainer">
+                <img src="./images/b.jpg" alt="" class="logo">
+                 <div class="logotext">harath</div>
+            </div>
+            <div class="navitems">
+                <div><a href="#projects">Projects</a></div>
+                <div><a href="#skills">Skills</a></div>
+                <div><a href="#contactme">Contact</a></div>
+            </div>
+        </div>
+      
+
+       <div class="herosection">
+        <div class="faddedtext">Bharath</div>
+        <div class="heroleft">
+            <div class="herohead">Hi! Bharath</div>
+            <div class="herohead herosubhead">I am a<span class="role">Web Developer</span>
+            </div>
+            <div class="herodescription">
+                Motivated and skilled MCA graduate with a strong foundation in software development
+                and programming languages such as Java, Python, C, and C++. Experienced in building web applications
+                using HTML, CSS, JavaScript, React, Express.js, Node.js, Spring Boot. Seeking a Software Engineer role where I can
+                contribute my skills in web development, backend services, and databases.
+            </div>
+            <!-- <div class="btnpink" id="btn">
+                <button class="button">Hire Me</button>
+            </div> -->
+        </div>
+
+        <div class="heroright">
+            <div class="userimg">
+                <img src="./images/Profile.jpg" alt="" class="img">
+            </div>
+        </div>
+    </div> 
+       </div><!--container close-->
+   
+
+
+    <div class="projectsection" id="projects">
+        <h2 class="pageheader">Projects</h2>
+
+        <div class="projectWrapper">
+            <div class="projectcard">
+                <div class="project-content">
+                    <h2 class="" style="font-size: 1.5rem; font-weight: bold;">College Election Voting System</h2>
+                <div>
+                    <p class="projectDesc">I developed a full-stack College Election System using Spring Boot, ReactJS, and MySQL, integrating Spring Security with JWT token-based authentication for secure role management (admin and voter roles). The system features complete CRUD operations, allowing efficient voter registration, election management, and real-time results tracking. With React and Redux for frontend state management, it offers a user-friendly interface for voters, and an admin panel for overseeing candidates, positions, and the election process in real time. The backend uses Spring MVC, RESTful APIs, and Spring Data JPA for smooth data handling with MySQL.</p>
+                </div>
+                <a href="https://github.com/Bharaths73/College_Election_Voting_System"><img src="./images/git.png" alt="" class="giticon"></a>
+                </div>
+            </div>
+            <div class="projectcard">
+                <div class="project-content">
+                    <h2 class="" style="font-size: 1.5rem; font-weight: bold;">StudyInProgress:-Online Learning Platform</h2>
+                <div>
+                    <p class="projectDesc">I developed "StudyInProgress," an online learning platform with RESTful APIs built using Express.js and Node.js to facilitate seamless data exchange. The platform features secure user authentication and authorization, MongoDB for storing and retrieving user and course data, and Redux Toolkit for managing state. Designed with React.js and Tailwind CSS, the frontend offers a user-friendly interface, supporting course browsing, purchasing, and instructor course management, ensuring an intuitive experience for all users.</p>
+                </div>
+                <a href="https://github.com/Bharaths73/StudyInProgress-Online-Learning-Platform"><img src="./images/git.png" alt="" class="giticon"></a>
+                </div>
+            </div>
+            <div class="projectcard">
+               <div class="project-content">
+                <h2 class="" style="font-size: 1.5rem; font-weight: bold;">Cursor Pointer Control Using Eye and Hand Gestures</h2>
+                <div>
+                    <p class="projectDesc">I developed a system that allows users to control the computer cursor using eye and hand gestures. The system implements real-time gesture recognition through Python and MediaPipe, enabling intuitive and responsive cursor control. I also designed a graphical user interface (GUI) with Tkinter, allowing users to switch seamlessly between eye and hand gesture modes. This innovation enables hands-free interaction with the computer interface, enhancing accessibility and user experience.</p>
+                </div>
+                <a href="https://github.com/Bharaths73/Cursor_Control_Using_Eye_and_Hand_Gestures"><img src="./images/git.png" alt="" class="giticon"></a>
+               </div>
+            </div>
+            <div class="projectcard">
+                <div class="project-content">
+                    <h2 class="" style="font-size: 1.5rem; font-weight: bold;">News App</h2>
+                <div>
+                    <p class="projectDesc">I developed a news app using HTML, CSS, and JavaScript, providing users with an intuitive interface for browsing and reading news articles.In developing the news app, I integrated the News API to fetch real-time news articles and dynamically display them on the interface. This enabled the app to provide up-to-date content, enhancing the user experience with timely and relevant news from various sources. The combination of HTML, CSS, and JavaScript, along with the News API, ensured a smooth and interactive experience for users.</p>
+                </div>
+                <a href="https://github.com/Bharaths73/News_App"><img src="./images/git.png" alt="" class="giticon"></a>
+                </div>
+            </div>
+
+            <div class="projectcard">
+                <div class="project-content">
+                    <h2 class="" style="font-size: 1.5rem; font-weight: bold;">Weather App</h2>
+                <div>
+                    <p class="projectDesc">I developed a weather app using HTML, CSS, and JavaScript, which provides real-time weather updates by fetching data from the Weather API. The app allows users to enter a city name and retrieve current weather conditions, including temperature, humidity, and other relevant data. The frontend was designed with a responsive layout to ensure accessibility across different devices, offering a seamless and intuitive user experience. JavaScript was used for dynamic content updates and interaction, ensuring the weather information is displayed accurately and in real time.</p>
+                </div>
+                <a href="https://github.com/Bharaths73/Weather-Application"><img src="./images/git.png" alt="" class="giticon"></a>
+                </div>
+            </div>
+            <!-- <div class="projectcard" id="project4">
+                <div class="projectnumber projectnumberleft">04</div>
+                <div class="projectcontent projectcontentright">
+                    <div class="projectskillscontainer">
+                         <img src="./images/html.png" alt="" class="projectskill">
+                         <img src="./images/css.png" alt="" class="projectskill">
+                         <img src="./images/js.png" alt="" class="projectskill">
+                    </div>
+                    <h2 class="projectheading">News App</h2>
+                    <div class="projectsubhead">I developed a news app using HTML, CSS, and JavaScript, providing users with an intuitive interface for browsing and reading news articles.In developing the news app, I integrated the News API to fetch real-time news articles and dynamically display them on the interface. This enabled the app to provide up-to-date content, enhancing the user experience with timely and relevant news from various sources. The combination of HTML, CSS, and JavaScript, along with the News API, ensured a smooth and interactive experience for users.
+                        </div>
+                        <div class="btngrp">
+                             <button class="button1 button">Read More</button> 
+                            <a href="https://github.com/Bharaths73/News_App"><img src="./images/git.png" alt="" class="giticon"></a>
+                            <a href="#"><img src="" alt="" class="linkicon"></a>
+                        </div>
+                </div>
+            </div> -->
+        </div>
+
+        
+
+    </div>
+
+    <div class="skillcontainer container" id="skills">
+           <!-- <div class="skillfadetext">SKILLS</div> -->
+           <div class="skillleft">
+               <h2 class="skillheading">
+                <span class="caps">M</span>e and<br/>
+                MyTech Stack
+               </h2>
+               <div class="sillsubheading">
+                <p>I have gained expertise in a variety of technologies that enable me to build robust, scalable applications. I work with HTML5, CSS3, and JavaScript to create dynamic user interfaces. I use React.js for building modern, responsive front-end applications, with state management handled by Redux. On the server-side, I utilize Node.js with Express.js to create RESTful APIs and Spring boot, and I rely on MySQL and MongoDB for efficient data storage. Additionally, I integrate version control with Git and host code on GitHub. I'm proficient with Spring Boot for building Java-based applications, making my tech stack versatile and adaptive to the needs of full-stack development.</p>
+
+                <!-- -->
+               </div>
+           </div>
+           
+           <div class="skillright">
+                <img src="./images/c++.png" alt="" class="skilllogo">
+                <img src="./images/java.png" alt="" class="skilllogo">
+                <img src="./images/html.png" alt="" class="skilllogo">
+                <img src="./images/css.png" alt="" class="skilllogo">
+                <img src="./images/js.png" alt="" class="skilllogo">
+                <img src="./images/reactjs_logo_icon_168875.webp" alt="" class="skilllogo">
+                <img src="./images/mysql.png" alt="" class="skilllogo">
+                <img src="./images/node.png" alt="" class="skilllogo">
+                <img src="./images/express.png" alt="" class="skilllogo">
+                <img src="./images/git.png" alt="" class="skilllogo">
+                <img src="./images/c.png" alt="" class="skilllogo">
+                <img src="./images/redux.png" alt="" class="skilllogo">
+                <img src="./images/spring.jpg" alt="" class="skilllogo">
+                <img src="./images/mongo.webp" alt="" class="skilllogo">
+                <img src="./images/python.png" alt="" class="skilllogo">
+           </div>
+    </div>
+
+    <div class="contactusformcontainer" id="contactme">
+        <div class="container">
+            <h1 class="contactusheading">Contact Me</h1>
+            <h3 class="contactussubheading">Questions,thoughts,or just want to say hello?</h3>
+            <div class="contactusformcontainer">
+                <form action="" class="form" id="contactus">
+                    
+                        <input type="text" name="userName" id="userName" placeholder="Enter your name" class="formfield" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your mail" class="formfield" required>
+                        <input type="text" name="subject" id="subject" placeholder="Enter your subject" class="formfield" required>
+                        <textarea name="message" id="message" cols="30" rows="10" class="formfield formfieldarea" placeholder="Enter your message" required></textarea>
+                        
+                    
+                    <div>
+                        <button class="button" id="submitbtn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footerwrappper">
+                <div class="footerfadedtext">Bharath</div>
+                <div class="iconwrapper">
+                    <!-- <a href="www.facebook.com" target="_blank"><img src="fb.png" alt="" class="footericon"></a>
+                    <a href="" target="_blank"><img src="insta.png" alt="" class="footericon"></a> -->
+                    <a href="https://www.linkedin.com/in/bharath-s-40a679215" target="_blank"><img src="./images/in.png" alt="" class="footericon"></a>
+                    <a href="https://github.com/Bharaths73" target="_blank"><img src="./images/git2.png" alt="" class="footericon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
