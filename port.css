@@ -94,7 +94,11 @@ a{
     transition: all 3s;
     position: absolute;
 }
-
+.about-me{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
 .heroleft{
     display: flex;
     flex-direction: column;
@@ -116,6 +120,8 @@ a{
 .herosubhead{
     font-size:2rem;
     line-height: 45px;
+    font-weight: 620;
+    color:#4e45d5;
 }
 .herodescription{
     /* margin-top: rem; */
@@ -655,7 +661,7 @@ footer{
     
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:500px) {
     .navbar{
         display: flex;
         flex-direction: column;
