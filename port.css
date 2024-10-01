@@ -220,10 +220,30 @@ a{
     font-size:1rem;
 }
 
+.download-btn{
+    /* padding: 0.2rem 0.5rem; */
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-btn:hover{
+    background-color:yellowgreen;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;   
+}
+
+.download-container{
+    
+}
+
 .card-img{
     max-width: 100%;
     height: auto;
-    border:2px;
+    border:0.3rem solid rgb(219, 157, 76,0.3);
     border-radius: 0.7rem;
     box-shadow:0px 0px 40px 0.3em rgb(219, 157, 76);
 }
@@ -546,6 +566,9 @@ footer{
         justify-content: center;
         row-gap: 5rem;
         margin-bottom: 0;
+    }
+    .download-btn{
+        margin: auto;
     }
     .skillcontainer{
         display: flex;
