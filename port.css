@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 .projectsubhead{
     /* text-align: justify; */
