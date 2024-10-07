@@ -327,12 +327,15 @@ a{
 .giticon{
     width: 40px;
     cursor: pointer;
-    transition:0.4s;
-    border: 2px;
-    border-radius: 100%;
+    /* transition:0.4s; */
+    /* border: 2px; */
+    /* border-radius: 100%; */
     padding: 2px;
     margin-top: auto;
+    transition: all 1s;
 }
+
+
 .project-content{
     display: flex;
     flex-direction: column;
@@ -341,7 +344,9 @@ a{
     row-gap: 1rem;
 }
 .giticon:hover{
-     background-color:#ffff9f;
+    animation: scaleIcon 1.5s linear infinite;
+    border-radius: 100%;
+    background-color: aquamarine;
      /* width:50px; */
 }
 .projectcard:hover .projectcontent{
@@ -705,6 +710,19 @@ footer{
     100%{
         transform: scale(1);
         filter: grayscale(0);
+        
+    }
+}
+
+@keyframes scaleIcon{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.3);
         
     }
 }
