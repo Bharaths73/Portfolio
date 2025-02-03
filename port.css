@@ -600,15 +600,16 @@ footer{
     .faddedtext,.skillfadetext{
         display: none;
     }
-    .projectWrapper{
+    /* .projectWrapper{
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
-    }
+    } */
 }
 
 @media screen and (max-width:750px) {
     .projectWrapper{
         grid-template-columns: 1fr;
+        row-gap: 2.5rem;
     }
 }
 
