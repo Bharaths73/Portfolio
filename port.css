@@ -225,6 +225,32 @@ a{
     font-size:1rem;
 }
 
+.education{
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    padding-bottom: 30px;
+}
+
+@keyframes edu-image {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.education-container{
+    width:80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .download-btn{
     /* padding: 0.2rem 0.5rem; */
     background-color: red;
@@ -419,6 +445,71 @@ a{
 .caps{
     font-size: 90px;
 }
+
+.education-list{
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    /* margin-top:1rem; */
+    margin-left:2rem;
+}
+
+.cgpa{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 1rem;
+}
+
+.education-inner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+.divider{
+    width:4rem;
+    border-bottom: 2px dashed blueviolet;
+    rotate: 90deg;
+    margin-left:-3.1rem;
+    margin-top:-2rem;
+}
+
+.education-image{
+    width:20em;
+    animation: edu-image 3s ease-in-out 0s infinite alternate forwards;
+}
+
+.image-container{
+    background-color:antiquewhite;
+    width:max-content;
+    height: max-content;
+    border:2rem solid white;
+    border-radius: 50%;
+    box-shadow: 5px 10px 100px antiquewhite;
+}
+
+.college-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: darkslategrey;
+    margin-bottom: 0.5rem;
+}
+
+li::marker {
+    color: blueviolet;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+  
+.degree-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:black;
+    color:#535c87;
+    margin-bottom: 0.3rem;
+}
 .sillsubheading{
     margin-top:1rem;
     width: fit-content;
@@ -432,7 +523,7 @@ a{
 }
 .contactusformcontainer{
     width: 100%;
-    background-color: rgb(231, 231, 231);
+    background-color: white;
     padding-bottom: 30px;
 }
 #submitbtn{
@@ -453,6 +544,14 @@ a{
     /* padding: 2rem; */
     margin-bottom: 1rem;
     margin-top: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.education-heading{
+    color: red;
+    /* text-align: center; */
+    font-size: 3.5em;
+    /* padding: 2rem; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .contactussubheading{
@@ -613,8 +712,24 @@ footer{
     }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1050px) {
+    .education-inner-container{
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 5rem;
+        margin-top: 3rem;
+    }
+}
 
+@media screen and (max-width:700px) {
+    .education-image{
+        width:13rem;
+    }
+    .education-heading{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
     .navitems div{
         font-size: 1.1rem;
   }
@@ -645,6 +760,22 @@ footer{
     .img{
         width: 10rem;
         height: 10rem;
+    }
+    .education-list{
+        row-gap: 1.5rem;
+    }
+    .divider{
+        width:2rem;
+        margin-left:-2.1rem;
+    }
+    .degree-name{
+        font-size:1rem ;
+    }
+    .college-name{
+        font-size: 1rem;
+    }
+    .cgpa{
+        font-size: 1rem;
     }
     .herosection{
         row-gap: 3rem;
