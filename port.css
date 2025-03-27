@@ -27,7 +27,8 @@
     position: relative;
     justify-content:space-between;
     align-items: center;
-    padding-top:1rem;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
     width: 80vw;
     margin: auto;
 }
@@ -464,6 +465,8 @@ a{
 
 .education-inner-container{
     display: flex;
+    margin-top: 3rem;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
@@ -549,7 +552,7 @@ li::marker {
 
 .education-heading{
     color: red;
-    /* text-align: center; */
+    text-align: center;
     font-size: 3.5em;
     /* padding: 2rem; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -560,6 +563,56 @@ li::marker {
     /* word-break: break-all; */
     text-transform: capitalize;
 }
+
+.hamburger{
+    width:2rem;
+    cursor: pointer;
+    display: none;
+}
+#hamburger-items{
+    position: absolute;
+    display: none;
+    top: 100%;
+    right: -13%;
+    background-color: white;
+    transition: 0.3s;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+    border:2px solid gray;
+    border-top: none;
+    box-shadow: -20px 20px 50px rgba(0,0,0,0.2);
+}
+
+#hamburger-items.active{
+    display: flex;
+}
+
+.hamburger-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+}
+
+.nav-hamburger-item{
+    padding-left:3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color:white;
+    font-size:larger;
+    font-weight: 800;
+    width:100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-hamburger-item:active{
+    background-color: #E6E5E1;
+}
+
 .contactusformcontainer{
     margin-top: 25px;
     display: flex;
@@ -650,6 +703,12 @@ footer{
     }
 }
 
+@media screen and (min-width:800px) {
+    .hamburger-list{
+        display: none;
+    }
+}
+
 @media screen and (max-width:1000px) {
     .img{
         width: 12rem;
@@ -668,7 +727,12 @@ footer{
 }
 
 @media screen and (max-width:900px) {
-
+    .education-inner-container{
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 5rem;
+        margin-top: 3rem;
+    }
     .herosection{
         display: flex;
         flex-direction: column-reverse;
@@ -712,14 +776,40 @@ footer{
     }
 }
 
-@media screen and (max-width:1050px) {
-    .education-inner-container{
+@media screen and (max-width:800px) {
+    .hamburger{
+        display: block;
+    }
+    /* #hamburger-items{
         display: flex;
-        flex-direction: column-reverse;
-        row-gap: 5rem;
-        margin-top: 3rem;
+        flex-direction: column; 
+    } */
+    .navitems{
+        display: none;
     }
 }
+
+@media screen and (max-width:1200px) {
+    .degree-name{
+        font-size:1.3rem ;
+    }
+    .college-name{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .degree-name{
+        font-size:1.3rem ;
+    }
+    .college-name{
+        font-size: 1rem;
+    }
+    .education-image{
+        width:15rem;
+    }
+}
+
 
 @media screen and (max-width:700px) {
     .education-image{
@@ -799,14 +889,6 @@ footer{
 }
 
 @media screen and (max-width:500px) {
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        row-gap: 1.5rem;
-    }
-    .navitems{
-        margin-bottom: 1rem;
-    }
     .container{
         width:100vw;
     }
