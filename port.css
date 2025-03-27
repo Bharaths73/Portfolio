@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior:smooth;
+    -webkit-tap-highlight-color:transparent;
 }
 .projectsubhead{
     /* text-align: justify; */
@@ -608,10 +609,17 @@ li::marker {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+a {
+    text-decoration: none; 
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
 
 .nav-hamburger-item:active{
     background-color: #E6E5E1;
+    color: inherit;
 }
+
 
 .contactusformcontainer{
     margin-top: 25px;
