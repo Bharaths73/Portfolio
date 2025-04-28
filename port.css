@@ -838,6 +838,13 @@ footer{
     .college-name{
         font-size: 1rem;
     }
+    .education-content h3 {
+        font-size: 1rem;
+    }
+
+      .education-content p {
+        font-size: 0.8rem;
+      }
 }
 
 @media screen and (max-width:1000px) {
@@ -862,13 +869,6 @@ footer{
         font-size: 2.2rem;
         text-align: center;
     }
-    .education-content h3 {
-        font-size: 1rem;
-      }
-
-      .education-content p {
-        font-size: 0.8rem;
-      }
     
     .navitems div{
         font-size: 1.1rem;
