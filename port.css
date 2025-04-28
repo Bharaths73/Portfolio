@@ -130,7 +130,6 @@ a{
     /* margin-top: rem; */
     width:fit-content;
     line-height: 1.7rem;
-    text-align: justify;
     font-weight: 500;
     font-size: 1rem;
     color: rgb(191, 186, 186);
@@ -154,11 +153,12 @@ a{
     position:relative;
 }
 .userimg{
+    padding: 1.5rem;
     filter:grayscale(1);
     transition: all 1s;
     animation: scaleImage 5s linear infinite;
     border-radius: 50%;
-    border:1.5rem solid aqua;
+    /* border:1.5rem solid aqua; */
 }
 .img{
     width:15rem;
@@ -194,7 +194,7 @@ a{
 }
 .projectcard{
     position: relative;
-    box-shadow: 0px 0px 40px rgb(137, 131, 131);
+    box-shadow: 0px 0px 40px rgb(101, 98, 98);
     width: fit-content; 
     border: 2px; 
     /* z-index: 0; */
@@ -256,7 +256,7 @@ a{
     align-items: center;
     margin-bottom: 30px;
     border:2px solid aliceblue;
-    box-shadow: 15px 15px 10px gray;
+    box-shadow: 15px 15px 3px gray;
     padding: 1.5rem 2rem;
     border-radius: 0rem;
     background-color:azure;
@@ -550,7 +550,7 @@ li::marker {
     margin: 15px;
     line-height: 2rem;
     font-size: 18px;
-    text-align: justify;
+    /* text-align: center; */
 }
 .contactusformcontainer{
     width: 100%;
@@ -662,8 +662,8 @@ a {
    justify-content: center;
    align-items: center;
    width:100%;
-   padding-left: 1.7rem;
-   padding-right: 1.7rem;
+   padding-left: 1.5rem;
+   /* padding-right: 1.7rem; */
 }
 /* .formfieldcontainer{
     width:100%;
