@@ -76,7 +76,7 @@
                 <div class="herohead herosubhead">About Me
                 </div>
                 <div class="herodescription">
-                    Iam <span style="font-weight: bold;">Bharath</span>, a Motivated and skilled MCA graduate with a strong foundation in software development and programming languages such as Java, Python, C, and C++. Experienced in building web applications using HTML, CSS, JavaScript, React, Express.js, Node.js, Spring Boot. Seeking a Software Engineer role where I can contribute my skills in web development, backend services, and databases.
+                    Iam <span style="font-weight: bold;">Bharath</span>, a Motivated and skilled MCA graduate with a strong foundation in software development and programming languages such as Java, Python, C, and C++. Experienced in building web applications using HTML, CSS, JavaScript, React, Express.js, Node.js, Spring Boot. Seeking a Software Engineer role where I can contribute my skills in Web Development, Full Stack Development, Frontend Development, Backend Development and Databases.
                 </div>
             </div>
             <div>
@@ -97,8 +97,8 @@
     <div class="projectsection" id="projects">
         <h2 class="pageheader">Projects</h2>
 
-        <div class="projectWrapper">
-            <div class="projectcard">
+        <div class="projectWrapper" id="projects-container">
+            <div class="projectcard" data-github="https://github.com/Bharaths73/College_Election_Voting_System">
                 <div class="project-content">
                     <img src="./images/Screenshot (217).png" class="card-img"/>
                     <h2 class="project-head">College Election Voting System</h2>
@@ -108,7 +108,7 @@
                 <a href="https://github.com/Bharaths73/College_Election_Voting_System"><img src="./images/git.png" alt="" class="giticon"></a>
                 </div>
             </div>
-            <div class="projectcard">
+            <div class="projectcard" data-github="https://github.com/Bharaths73/StudyInProgress-Online-Learning-Platform">
                 <div class="project-content">
                     <img src="./images/Screenshot (218).png" class="card-img"/>
                     <h2 class="project-head">StudyInProgress:-Online Learning Platform</h2>
@@ -120,7 +120,7 @@
                 </div>
             </div>
 
-            <div class="projectcard">
+            <div class="projectcard" data-github="https://github.com/Bharaths73/Chat-App">
                 <div class="project-content">
                     <img src="./images/chatapp.png" class="card-img"/>
                     <h2 class="project-head" style="">Chat Application</h2>
@@ -131,7 +131,7 @@
                 </div>
             </div>
             
-            <div class="projectcard">
+            <div class="projectcard" data-github="https://github.com/Bharaths73/News_App">
                 <div class="project-content">
                     <img src="./images/Screenshot (220).png" class="card-img"/>
                     <h2 class="project-head" >News Application</h2>
@@ -142,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="projectcard">
+            <div class="projectcard" data-github="https://github.com/Bharaths73/Weather-Application">
                 <div class="project-content">
                     <img src="./images/Screenshot (219).png" class="card-img"/>
                     <h2 class="project-head" style="">Weather Application</h2>
@@ -154,7 +154,7 @@
             </div>
 
 
-            <div class="projectcard">
+            <div class="projectcard" data-github="https://github.com/Bharaths73/Cursor_Control_Using_Eye_and_Hand_Gestures">
                 <div class="project-content">
                  <img src="./images/Screenshot (145).png" class="card-img"/>
                  <h2 class="project-head">Cursor Pointer Control Using Eye and Hand Gestures</h2>
@@ -226,21 +226,31 @@
             <h2 class="education-heading">Education</h2>
             <div class="education-inner-container">
                 
-                <ul class="education-list">
-                    <li>
-                        <p class="degree-name">Master of Computer Applications</p>
-                        <p class="college-name">PES University, Bengaluru</p>
-                        <!-- <span class="cgpa">CGPA: 7.9</span> -->
-                    </li>
-                    <div class="divider"></div>
-                    <li>
-                        <p class="degree-name">Bachelor of Computer Applications</p>
-                        <p class="college-name">BMS College of Commerce and Management, Bengaluru</p>
-                        <!-- <span class="cgpa">CGPA: 7.7</span> -->
-                    </li>
-                </ul>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-icon">
+                          <img src="./images/graduation-hat.png" alt="Graduation Cap">
+                        </div>
+                        <div class="education-content">
+                          <h3>Master of Computer Applications</h3>
+                          <p>PES University, Bengaluru</p>
+                          <span class="education-year">2022 - 2024</span>
+                        </div>
+                      </div>
+                  
+                      <div class="education-item">
+                        <div class="education-icon">
+                          <img src="./images/graduation-hat.png" alt="Graduation Cap">
+                        </div>
+                        <div class="education-content">
+                          <h3>Bachelor of Computer Applications</h3>
+                          <p>BMS College of Commerce and Management, Bengaluru</p>
+                          <span class="education-year">2019 - 2022</span>
+                        </div>
+                      </div>
+                    </div>
                 <div class="image-container">
-                    <img src="./images/education.png" class="education-image"/>
+                    <img src="./images/leadership.png" class="education-image"/>
                 </div>
             </div>
         
@@ -249,6 +259,7 @@
     </div>
 
 
+      
     <div class="contactusformcontainer" id="contactme">
         <div class="contact-container">
             <h1 class="contactusheading">Contact Me</h1>
@@ -291,6 +302,19 @@
         }
     
             document.getElementById('hamburger-icon').addEventListener('click',hamburgerButton)
+
+        function project(e){
+            console.log(e);
+            
+            const card=e.target.closest('.projectcard');
+
+            if(card && card.dataset.github){
+                window.open(card.dataset.github,'_blank')
+            }
+            
+        }
+
+        document.getElementById('projects-container').addEventListener('click',project)
     </script>
 </body>
 

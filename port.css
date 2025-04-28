@@ -233,6 +233,63 @@ a{
     padding-bottom: 30px;
 }
 
+.education-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .education-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .education-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border:2px solid aliceblue;
+    box-shadow: 15px 15px 10px;
+    padding: 1.5rem 2rem;
+    border-radius: 0rem;
+    background-color:azure;
+    cursor: pointer;
+  }
+
+  .education-item:hover{
+    background-color: white;
+    border-color: white;
+  }
+  
+  .education-icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .education-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .education-content p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .education-year {
+    font-size: 14px;
+    color: #888;
+  }
+  
+
 @keyframes edu-image {
     0% {
         transform: translateY(0px);
@@ -281,30 +338,6 @@ a{
     box-shadow:0px 0px 40px 0.3em rgb(219, 157, 76);
 }
 
-/* .projectcard::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #1f1f1f9a;
-    z-index: 0;
-   /* transform: scaleX(1);
-}*/
-/* .projectcard::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(45deg,#343d68,#343d68be,#343d687c);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: all 0.4s;
-    z-index: 1; 
-}*/
 .projectcard:hover{
     transform: scale(1.05);
 } 
@@ -454,7 +487,7 @@ a{
     flex-direction: column;
     row-gap: 2rem;
     /* margin-top:1rem; */
-    margin-left:2rem;
+    /* margin-left:2rem; */
 }
 
 .cgpa{
@@ -468,7 +501,7 @@ a{
     display: flex;
     margin-top: 3rem;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     column-gap: 1rem;
 }
@@ -811,8 +844,9 @@ footer{
     .degree-name{
         font-size:1.3rem ;
     }
-    .college-name{
-        font-size: 1rem;
+    
+    .education-item{
+        padding: 1rem 1rem;
     }
     .education-image{
         width:15rem;
@@ -828,6 +862,13 @@ footer{
         font-size: 2.2rem;
         text-align: center;
     }
+    .education-content h3 {
+        font-size: 1rem;
+      }
+
+      .education-content p {
+        font-size: 0.8rem;
+      }
     
     .navitems div{
         font-size: 1.1rem;
