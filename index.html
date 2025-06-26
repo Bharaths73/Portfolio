@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div>
-                <a href="./resume/Bharath_S_Resume.pdf" class="download-btn" id="submitbtn" type="file" download="final_updated_resume.pdf">Resume <img src="./images/downloadicon.png" width="30" height="20"/></a>
+                <a href="./resume/Bharath_S_Jobs_Resume.pdf" class="download-btn" id="submitbtn" type="file" download="final_updated_resume.pdf">Resume <img src="./images/downloadicon.png" width="30" height="20"/></a>
             </div>
         </div>
 
@@ -97,17 +97,17 @@
         <h2 class="pageheader">Projects</h2>
 
         <div class="projectWrapper" id="projects-container">
-            <div class="projectcard" data-github="https://github.com/Bharaths73/College_Election_Voting_System">
+            <div class="projectcard" data-github="https://college-election-voting-system-frontend.onrender.com">
                 <div class="project-content">
                     <img src="./images/Screenshot (217).png" class="card-img"/>
                     <h2 class="project-head">College Election Voting System</h2>
                 <div>
                     <p class="projectDesc">A full-stack application using Spring Boot, ReactJS, and MySQL, with JWT-based authentication. Features voter registration, election management, real-time results, and an admin panel for oversight.</p>
                 </div>
-                <img src="./images/git.png" alt="" class="giticon">
+                <a href="https://github.com/Bharaths73/College_Election_Voting_System"><img src="./images/git.png" alt="" class="giticon"></a>
                 </div>
             </div>
-            <div class="projectcard" data-github="https://github.com/Bharaths73/StudyInProgress-Online-Learning-Platform">
+            <div class="projectcard" data-github="https://studyinprogress-online-learning-platform.onrender.com" >
                 <div class="project-content">
                     <img src="./images/Screenshot (218).png" class="card-img"/>
                     <h2 class="project-head">StudyInProgress:-Online Learning Platform</h2>
@@ -115,18 +115,18 @@
                     <p class="projectDesc">
                         An online learning platform with Express.js, Node.js, MongoDB, and ReactJS. It offers secure authentication, course browsing, purchasing, and instructor management with a user-friendly interface powered by Redux and Tailwind CSS.</p>
                 </div>
-                <img src="./images/git.png" alt="" class="giticon">
+                <a href="https://github.com/Bharaths73/StudyInProgress-Online-Learning-Platform"><img src="./images/git.png" alt="" class="giticon"></a>
                 </div>
             </div>
 
-            <div class="projectcard" data-github="https://github.com/Bharaths73/Chat-App">
+            <div class="projectcard" data-github="https://chat-app-frontend-at2y.onrender.com/">
                 <div class="project-content">
                     <img src="./images/chatapp.png" class="card-img"/>
                     <h2 class="project-head" style="">Chat Application</h2>
                 <div>
                     <p class="projectDesc">A real-time chat app using React.js, Node.js, and WebSockets for instant messaging. Features include authentication, private chats, MongoDB storage, and a responsive UI for seamless communication across devices.</p>
                 </div>
-                <img src="./images/git.png" alt="" class="giticon">
+                <a href="https://github.com/Bharaths73/Chat-App"><img src="./images/git.png" alt="" class="giticon"></a>
                 </div>
             </div>
             
@@ -277,6 +277,12 @@
     </div>
 
     <script>
+       document.querySelectorAll('.projectcard a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+        });
+
         function hamburgerButton(e){
             console.log("burger");
             const items=document.getElementById("hamburger-items");
