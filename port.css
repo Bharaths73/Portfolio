@@ -140,8 +140,8 @@ a{
     width: 80px;
     height: 35px;
     color: white;
-    font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     border: none;
     transition: 0.3s;
 }
@@ -560,8 +560,8 @@ li::marker {
 #submitbtn{
     width: 150px;
     height: 50px;
-    font-size: 20px;
     transition: 0.3s;
+    font-size: 1rem;
     cursor: pointer;
 }
 .contactusheading{
@@ -720,6 +720,67 @@ footer{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin-top: 1.7rem;
+}
+.skills-container{
+    width: 100%;
+    background-color: black;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+#skills-outer-container{
+    width: 80vw;
+    height: max-content;
+    padding: 2rem;
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.skills-inner-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2.5em;
+    row-gap: 2em;
+    padding: 0.2rem;
+    flex-wrap: wrap;
+}
+
+.skilllogo{
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.skill{
+    font-size: 1.3rem;
+    font-weight: 500;
+    flex: 0 0 15%;
+    height: max-content;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    /* background-color:#7fff00; */
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    box-shadow:
+        0 0 6px rgba(0, 255, 255, 0.6),
+        0 0 12px rgba(0, 255, 255, 0.6),
+        0 0 24px rgba(0, 255, 255, 0.6);
+}
+
+.skill:hover{
+    box-shadow:
+        0 0 6px rgba(1, 255, 255, 1),
+        0 0 12px rgba(1, 255, 255, 1),
+        0 0 24px rgba(1, 255, 255, 1);
 }
 
 

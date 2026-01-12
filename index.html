@@ -10,31 +10,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./favicon_io/site.webmanifest">
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-    emailjs.init({
-        publicKey: "1l6H7J49qqEqNoIiN",
-    });
-    })();
-    </script>
-    <script>
-
-        window.onload = function() {
-            document.getElementById('contactus').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_b4t5fcr', 'template_pylbcts', this)
-                    .then(() => {
-                        alert("Mail sent successfully")
-                    }, (error) => {
-                        alert("Failed to send email")
-                    });
-            });
-        }
-    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -104,7 +79,7 @@
                 <div>
                     <p class="projectDesc">A full-stack application using Spring Boot, ReactJS, and MySQL, with JWT-based authentication. Features voter registration, election management, real-time results, and an admin panel for oversight.</p>
                 </div>
-                <a href="https://github.com/Bharaths73/College_Election_Voting_System"><img src="./images/git.png" alt="" class="giticon"></a>
+                <a href="https://github.com/Bharaths73/College_Election_Voting_System"><img src="./images/github1.png" alt="" class="giticon"></a>
                 </div>
             </div>
             <div class="projectcard" data-github="https://studyinprogress-online-learning-platform.onrender.com" >
@@ -115,7 +90,7 @@
                     <p class="projectDesc">
                         An online learning platform with Express.js, Node.js, MongoDB, and ReactJS. It offers secure authentication, course browsing, purchasing, and instructor management with a user-friendly interface powered by Redux and Tailwind CSS.</p>
                 </div>
-                <a href="https://github.com/Bharaths73/StudyInProgress-Online-Learning-Platform"><img src="./images/git.png" alt="" class="giticon"></a>
+                <a href="https://github.com/Bharaths73/StudyInProgress-Online-Learning-Platform"><img src="./images/github1.png" alt="" class="giticon"></a>
                 </div>
             </div>
 
@@ -126,7 +101,7 @@
                 <div>
                     <p class="projectDesc">A real-time chat app using React.js, Node.js, and WebSockets for instant messaging. Features include authentication, private chats, MongoDB storage, and a responsive UI for seamless communication across devices.</p>
                 </div>
-                <a href="https://github.com/Bharaths73/Chat-App"><img src="./images/git.png" alt="" class="giticon"></a>
+                <a href="https://github.com/Bharaths73/Chat-App"><img src="./images/github1.png" alt="" class="giticon"></a>
                 </div>
             </div>
             
@@ -137,7 +112,7 @@
                 <div>
                     <p class="projectDesc">A news app was built using HTML, CSS, and JavaScript, offering an intuitive interface for browsing articles. Integrated with the News API, it dynamically fetches real-time, relevant news for an interactive user experience.</p>
                 </div>
-                <img src="./images/git.png" alt="" class="giticon">
+                <img src="./images/github1.png" alt="" class="giticon">
                 </div>
             </div>
 
@@ -148,7 +123,7 @@
                 <div>
                     <p class="projectDesc">A weather app was built using HTML, CSS, and JavaScript to provide real-time updates from the Weather API. Users can enter a city to view current conditions, with a responsive design for seamless, accessible interaction across devices. JavaScript ensures dynamic content updates for accurate weather information.</p>
                 </div>
-                <img src="./images/git.png" alt="" class="giticon">
+                <img src="./images/github1.png" alt="" class="giticon">
                 </div>
             </div>
 
@@ -160,7 +135,7 @@
                  <div>
                      <p class="projectDesc">A Python and MediaPipe-based solution for controlling the computer cursor via eye and hand gestures. Includes a Tkinter GUI for mode switching, enhancing accessibility and user interaction.</p>
                  </div>
-                 <img src="./images/git.png" alt="" class="giticon">
+                 <img src="./images/github1.png" alt="" class="giticon">
                 </div>
              </div>
            
@@ -170,8 +145,7 @@
 
     </div>
 
-    <div class="skillcontainer container" id="skills">
-           <!-- <div class="skillfadetext">SKILLS</div> -->
+    <!-- <div class="skillcontainer container" id="skills">
            <div class="skillleft">
                <h2 class="skillheading">
                 <span class="caps">M</span>e and<br/>
@@ -179,8 +153,6 @@
                </h2>
                <div class="sillsubheading">
                 <p>I have gained expertise in a variety of technologies that enable me to build robust, scalable applications. I work with HTML5, CSS3, and JavaScript to create dynamic user interfaces, and use React.js for building modern, responsive front-end applications with state management handled by Redux. On the server side, I utilize Node.js with Express.js and Spring Boot to create RESTful APIs, and rely on MySQL and MongoDB for efficient data storage. Additionally, I integrate version control with Git and host code on GitHub. My proficiency with Spring Boot for Java-based applications makes my tech stack versatile and adaptable for full-stack development.</p>
-
-                <!-- -->
                </div>
            </div>
            
@@ -201,6 +173,12 @@
                 <img src="./images/mongo.webp" alt="" class="skilllogo">
                 <img src="./images/python.png" alt="" class="skilllogo">
            </div>
+    </div> -->
+
+    <div class="skills-container" id="skills">
+        <h2 class="pageheader">Skills</h2>
+        <div id="skills-outer-container">
+        </div>
     </div>
 
     <div class="education" id="education">
@@ -275,8 +253,46 @@
         <!-- </div> -->
     </footer>
     </div>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "1l6H7J49qqEqNoIiN",
+    });
+    })();
 
-    <script>
+        window.onload = function() {
+            document.getElementById('contactus').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_b4t5fcr', 'template_pylbcts', this)
+                    .then(() => {
+                        alert("Mail sent successfully")
+                    }, (error) => {
+                        alert("Failed to send email")
+                    });
+            });
+        }
+
+        const container=document.getElementById('skills-outer-container');
+            const skills=[
+                "HTML5","CSS3","JavaScript","Reactjs","Redux toolkit","Node.js","Express.js","Java","Spring Boot","Python","MySQL","MongoDB","Git","GitHub","Docker","Kubernetes","Jenkins","AWS","REST API"
+            ];
+
+            const skillsContainer=document.createElement('div');
+            skillsContainer.className="skills-inner-container";
+
+            skills.forEach(skill=>{
+                const skillDiv=document.createElement('div');
+                skillDiv.innerHTML=`<img src="./images/${skill.toLowerCase().replace(/\s+/g, '').replace('.', '')}.png" alt="${skill}" class="skilllogo"/><div class="skillname">${skill}</div>`;
+                //skillDiv.textContent=skill;
+                skillDiv.className="skill";
+                skillsContainer.appendChild(skillDiv);
+            });
+            container.appendChild(skillsContainer);
+
        document.querySelectorAll('.projectcard a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.stopPropagation();
