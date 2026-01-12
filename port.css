@@ -758,7 +758,7 @@ footer{
 .skill{
     font-size: 1.3rem;
     font-weight: 500;
-    flex: 0 0 15%;
+    flex: 0 0 10%;
     height: max-content;
     cursor: pointer;
     display: flex;

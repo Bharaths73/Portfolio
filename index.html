@@ -287,7 +287,6 @@
             skills.forEach(skill=>{
                 const skillDiv=document.createElement('div');
                 skillDiv.innerHTML=`<img src="./images/${skill.toLowerCase().replace(/\s+/g, '').replace('.', '')}.png" alt="${skill}" class="skilllogo"/><div class="skillname">${skill}</div>`;
-                //skillDiv.textContent=skill;
                 skillDiv.className="skill";
                 skillsContainer.appendChild(skillDiv);
             });
