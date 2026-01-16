@@ -448,9 +448,7 @@ a{
     row-gap: 1rem;
 }
 .skilllogo{
-    width: 4rem;
     cursor: pointer;
-    height: 4rem;
     transition: all 0.5s;
 }
 .skillfadetext{
@@ -750,26 +748,26 @@ footer{
 }
 
 .skilllogo{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
     cursor: pointer;
     transition: all 0.5s;
 }
 .skill{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
-    flex: 0 0 10%;
+    flex: 0 0 15%;
     height: max-content;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    row-gap: 0.7rem;
+    flex-direction: row;
+    column-gap: 0.7rem;
     align-items: center;
     justify-content: center;
     /* background-color:#7fff00; */
     color: white;
     border-radius: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 0.7rem 0.7rem;
     box-shadow:
         0 0 6px rgba(0, 255, 255, 0.6),
         0 0 12px rgba(0, 255, 255, 0.6),
@@ -847,10 +845,10 @@ footer{
         align-items: center;
         row-gap: 5rem;
     }
-    .skilllogo{
+    /* .skilllogo{
         width: 2.5rem;
       height: 2.5rem;
-    }
+    } */
     .skillleft{
         width: 100%;     
     }
@@ -871,6 +869,7 @@ footer{
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
     }
+   
 }
 
 @media screen and (max-width:800px) {
@@ -955,6 +954,9 @@ footer{
     .img{
         width: 10rem;
         height: 10rem;
+    }
+    .skill{
+        flex: 0 0 30%;
     }
     .education-list{
         row-gap: 1.5rem;
